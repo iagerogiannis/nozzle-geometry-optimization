@@ -5,7 +5,7 @@ like Steepest Descent, Newton's Method and BFGS, have been developed. For this a
 been considered.
 
 <p align="center">
-  <img src="readme/animation.gif">
+  <img src="readme/animation2.gif">
 </p>
 
 ## Mathematical Formulation
