@@ -5,7 +5,7 @@ from math import pi
 from matplotlib import pyplot as plt
 
 from numerical_analysis.splines.bezier import Bezier
-from numerical_analysis_custom import secant, newton_raphson
+from numerical_analysis.root_finding import secant, newton_raphson
 
 import numerical_analysis_custom as na
 from export_lib import file_manager as fm
@@ -20,7 +20,7 @@ class NozzleOptimizer:
                  datatype=np.float):
 
         # generatrix: Bezier Object
-        self.plot_exporter = PlotExporter(self, "results/plots")
+        self.plot_exporter = PlotExporter(self, "../results/plots")
         self.global_iterations = -1
         self.__generatrix = initial_generatrix
         self.__free_directions = free_directions

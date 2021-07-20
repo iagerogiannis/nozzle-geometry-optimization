@@ -3,7 +3,7 @@ import numpy as np
 from numerical_analysis.splines.bezier import Bezier
 from numerical_analysis.root_finding import secant
 
-from nozzle_optimizer import NozzleOptimizer
+from nozzle_geometry_optimization.nozzle_optimizer import NozzleOptimizer
 from matplotlib import pyplot as plt
 
 np.set_printoptions(linewidth=np.inf)

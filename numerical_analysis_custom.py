@@ -50,23 +50,3 @@ def tdma_solver(a, b, c, d):
         xc[il] = (dc[il] - cc[il] * xc[il + 1]) / bc[il]
 
     return xc
-
-
-def newton_raphson(f, df_dx, x0, error=1e-15):
-    i = -1
-    while abs(f(x0)) > error:
-        i += 1
-        x0 -= f(x0) / df_dx(x0)
-    return x0
-
-
-def secant(f, x0, x1, error=1e-15):
-    fx0 = f(x0)
-    fx1 = f(x1)
-    i = -1
-    while abs(fx1) > error:
-        i += 1
-        x2 = (x0 * fx1 - x1 * fx0) / (fx1 - fx0)
-        x0, x1 = x1, x2
-        fx0, fx1 = fx1, f(x2)
-    return x1
