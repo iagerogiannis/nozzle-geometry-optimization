@@ -20,7 +20,7 @@ class NozzleOptimizer:
                  datatype=np.float):
 
         # generatrix: Bezier Object
-        self.plot_exporter = PlotExporter(self, "../results/plots")
+        self.plot_exporter = PlotExporter(self, "results/plots")
         self.global_iterations = -1
         self.__generatrix = initial_generatrix
         self.__free_directions = free_directions
@@ -576,6 +576,7 @@ class NozzleOptimizer:
 
         for i in range(iterations):
 
+            self.global_iterations += 1
             tu = 0
 
             if method_grad == "adjoint" or method_grad == "direct" or method_hessian == "dd-av":
