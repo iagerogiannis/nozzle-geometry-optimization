@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt
 from numerical_analysis.splines.bezier import Bezier
 from numerical_analysis.root_finding import secant, newton_raphson
 
-import numerical_analysis_custom as na
+from nozzle_geometry_optimization import numerical_analysis_custom as na
 from export_lib import file_manager as fm
 from export_lib.plot_lib import PlotExporter
 
